@@ -3,8 +3,8 @@
 Initially, we installed ns-3 on our Linux system in our laptop. We make a copy of the template code and put it in ns3.26 installation.
 The first simulation is the one for point to point transmission. We run the simulation for 20 seconds.
 As a result of this simulation, we get two pieces of information.
-1.       The total number of packets received by the receiver as a text output on the terminal.
-2.       Two .pcap files that capture all the packets that travel through each of the nodes in the network. These files can be analyzed using wireshark.
+- The total number of packets received by the receiver as a text output on the terminal.
+- Two .pcap files that capture all the packets that travel through each of the nodes in the network. These files can be analyzed using wireshark.
 We change the simulation parameter n ie the number of nodes and add one more node into the network. When we add more nodes into the network, the throughput of the network increases.  Also, the number of packets received also increases.
 The third part of the project was to increase the distance. We increased the distance between all the 3 nodes from 100 to 350. After increasing the distance, the number of packets received are reduced due to increase in the transmission time between the transmitter and the receiver. Also there exists hidden node problem which leads to the decrease in the number of packets.
 Now, we enable the RTS and CTS by uncommenting the lines of code.
