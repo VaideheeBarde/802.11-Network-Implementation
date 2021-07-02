@@ -1,11 +1,20 @@
 # 802.11-Network-Implementation
 
-Initially, we installed ns-3 on our Linux system in our laptop. We make a copy of the template code and put it in ns3.26 installation.
-The first simulation is the one for point to point transmission. We run the simulation for 20 seconds.
-As a result of this simulation, we get two pieces of information.
-- The total number of packets received by the receiver as a text output on the terminal.
-- Two .pcap files that capture all the packets that travel through each of the nodes in the network. These files can be analyzed using wireshark.
-We change the simulation parameter n ie the number of nodes and add one more node into the network. When we add more nodes into the network, the throughput of the network increases.  Also, the number of packets received also increases.
+1.) REQUIREMENTS -
+Software installation - NS3.26
+Programming Language - C++ (Any programming language of choice)
+
+2.) Simulation 1 
+- Aim - Point to point transmission
+- Simulation parameters - n = number of nodes, d = distance between nodes
+- Simulation time - 20 seconds
+- Result - 1.) The total number of packets received by the receiver as a text output on the terminal. 2.) Two .pcap files that capture all the packets that travel through each of the nodes in the network. These files can be analyzed using wireshark.
+- Part 1 - Simulate using original n and d, e.g. n=5, d=100
+- Part 2 - increase the number of nodes (increasing n improves throughput and also increases the number of packets received).
+- Part 3 - increase the distance between the nodes (increasing d increases the transmission time between the transmitter and the receiver in additon to hidden node problem that leads to decrease in n).
+- Part 4 - enable RTS/CTS handshake in the code by setting the threshold value for the packet size above which an RTS/CTS handshake would be performed.
+
+
 The third part of the project was to increase the distance. We increased the distance between all the 3 nodes from 100 to 350. After increasing the distance, the number of packets received are reduced due to increase in the transmission time between the transmitter and the receiver. Also there exists hidden node problem which leads to the decrease in the number of packets.
 Now, we enable the RTS and CTS by uncommenting the lines of code.
 We run the simulation with 3 nodes and a distance of 350 between each nodes.
