@@ -5,7 +5,7 @@
 Software installation - NS3.26
 Programming Language - C++ (Any programming language of choice)
 
-2.) Simulation 1 
+2.) Simulation
 - Aim - Point to point transmission
 - Model used - Random grid location model, mobility_Rx function. We set the receiver randomly around the transmitter in a circle and set the distance of the receiver to (500,500).
 - Simulation parameters - n = number of nodes, d = distance between nodes
