@@ -3,7 +3,7 @@
 
 1.) REQUIREMENTS -
 Software installation - NS3.26
-Programming Language - C++ (Any programming language of choice)
+Programming Language - C++ 
 
 2.) Simulation
 - Aim - Point to point transmission
